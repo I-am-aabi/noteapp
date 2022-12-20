@@ -10,7 +10,9 @@ class HomePage extends StatelessWidget {
     return  SafeArea(
       child: Scaffold(
         appBar: AppBar(title: const Text('Note app')),
-        body: GridView
+        body: GridView.count(crossAxisCount: 3,
+        children: [],
+        )
       ),
     );
   }
